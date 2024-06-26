@@ -1,3 +1,3 @@
 # bookbot
 
-test
+my first project
