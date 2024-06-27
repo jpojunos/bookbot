@@ -1,12 +1,14 @@
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
-        #print(file_contents)
         char_dict = char_count(file_contents)
         sorted_chars = sort_dict_val(char_dict)
+        
+        print("---------Report Begins----------",end="\n\n")
+        print(f"There are {word_count(file_contents)} words in this book",end = "\n\n")
         for i in sorted_chars:
-            print(f"{i[0]} has {i[1]} occurances")
-        print(f"There are {word_count(file_contents)} words in this book")
+            print(f"The letter {i[0]} has {i[1]} occurances in this book")
+        print("---------Report Ends----------")
 
 def word_count(file_content):
     words = file_content.split()
