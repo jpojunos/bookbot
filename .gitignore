@@ -1,6 +1,6 @@
 .vscode
-books/
-bin/
-include/
-lib/
-lib64/
+books
+bin
+include
+lib
+lib64
